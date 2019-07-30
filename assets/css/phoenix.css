@@ -853,7 +853,7 @@ input[type=password] {
 /* Set a style for all buttons */
 
 button {
-    background-color: #4CAF50;
+    background-color: rgb(76, 175, 167);
     color: white;
     margin: 8px 0;
     border: none;
@@ -871,8 +871,8 @@ button:hover {
 
 /* Extra style for the cancel button (red) */
 
-.cancelbtn {
-    background-color: #f44336;
+.novobtn {
+    background-color: #10ecec;
 }
 
 
@@ -880,7 +880,11 @@ button:hover {
 
 .container {
     padding: 40px;
-    margin-left: 30px;
+    margin-left: 35px;
+}
+
+#container1 {
+    border-radius: 10px;
 }
 
 
@@ -895,6 +899,27 @@ button:hover {
     margin-bottom: 10%;
 }
 
-.w3-container w3-white {
-    border-radius: 20px solid white;
+.github img {
+    padding: 10px;
+    margin-left: 30%;
+}
+
+.github h4 {
+    margin-left: 15%;
+}
+
+footer {
+    opacity: 0.7;
+}
+
+header {
+    opacity: 0.7;
+}
+
+.w3-row img {
+    margin-top: -1.5%
+}
+
+.img1 {
+    float: left;
 }
