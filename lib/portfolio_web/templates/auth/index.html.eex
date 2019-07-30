@@ -3,8 +3,9 @@
         <div class="container">
             <div class="github">
                <img src="<%= Routes.static_path(@conn, "/images/github.svg") %>" style="width:20%" alt="Avatar"/>
-               <h4>Logar com GitHub</h4>
+               <br><%= link "Logar com GitHub", to: Routes.auth_path(@conn, :request, "github"), class: "git" %>
             </div>
+            <br>
 
             <label for="uname"><b>Usuário</b></label>
             <input type="text" placeholder="Entre com seu usuário" name="uname" required>
@@ -13,6 +14,7 @@
             <input type="password" placeholder="Entre com sua senha" name="psw" required>
 
             <button type="submit">Logar</button>
+            <button type="button" class="cancel">Cancelar</button>
             <button type="button" class="novobtn">Cadastrar - Se</button>
         </div>
     </div>

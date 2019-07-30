@@ -2,7 +2,7 @@
 
   <!-- Header -->
   <header class="w3-container w3-xlarge w3-teal w3-padding-24">
-    <a href="#" class="w3-left w3-button">Login</a>
+    <%= link "Login", to: Routes.auth_path(@conn, :index), class: "link" %>
     <a href="#about" class="w3-right w3-button">About</a>
   </header>
 
@@ -12,7 +12,7 @@
    </div>
 
 
-   <div class="w3-white w3-padding-64 w3-center ">
+   <div id="about" class="w3-white w3-padding-64 w3-center">
     <h1>About</h1>
 
     <h3>Quer mostrar seu portfólio? Mas não sabe como organizar?</h3>
@@ -28,12 +28,7 @@
 
 <!-- Footer -->
 <footer class="w3-container w3-teal w3-center w3-margin-top">
-    <p>Find me on social media.</p>
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    <p>OP-WEB</p>
+    
+    <p>Desenvolvido por uma CODE GIRL </p>
 </footer>
