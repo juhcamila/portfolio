@@ -841,11 +841,14 @@ button:hover {
 /* Extra style for the cancel button (red) */
 
 .novobtn {
-    background-color: #10ecec;
-    width: 40%;
-    padding-left: 10px;
+    width: 35%;
+    margin-right: 15px;
+    margin-top: 2%;
     text-align: center;
-    margin-right: 30px;
+    color: white;
+    padding: 4%;
+    background-color: #10ecec;
+    border-radius: 4px;
 }
 
 
@@ -905,7 +908,10 @@ header {
     float: left;
     width: 35%;
     margin-right: 15px;
+    margin-top: 2%;
     text-align: center;
-    padding-left: 15px;
+    color: white;
+    padding: 2%;
     background-color: rgb(253, 80, 80);
+    border-radius: 4px;
 }

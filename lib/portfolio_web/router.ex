@@ -19,7 +19,7 @@ defmodule PortfolioWeb.Router do
     get "/", PageController, :index
   end
 
-  scope "/login", PortfolioWeb do 
+  scope "/auth", PortfolioWeb do 
     pipe_through :browser
 
     get "/", AuthController, :index

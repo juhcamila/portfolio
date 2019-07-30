@@ -14,8 +14,8 @@
             <input type="password" placeholder="Entre com sua senha" name="psw" required>
 
             <button type="submit">Logar</button>
-            <button type="button" class="cancel">Cancelar</button>
-            <button type="button" class="novobtn">Cadastrar - Se</button>
+            <%= link "Cancelar", to: Routes.page_path(@conn, :index), class: "cancel" %>
+            <%= link "Criar Conta", to: Routes.page_path(@conn, :index), class: "novobtn" %>
         </div>
     </div>
 </div>
