@@ -67,22 +67,6 @@ input[type='submit'] {
     white-space: nowrap
 }
 
-.button:focus,
-.button:hover,
-button:focus,
-button:hover,
-input[type='button']:focus,
-input[type='button']:hover,
-input[type='reset']:focus,
-input[type='reset']:hover,
-input[type='submit']:focus,
-input[type='submit']:hover {
-    background-color: #606c76;
-    border-color: #606c76;
-    color: #fff;
-    outline: 0
-}
-
 .button[disabled],
 button[disabled],
 input[type='button'][disabled],
@@ -873,6 +857,10 @@ button:hover {
 
 .novobtn {
     background-color: #10ecec;
+    width: 40%;
+    padding-left: 10px;
+    text-align: center;
+    margin-right: 30px;
 }
 
 
@@ -922,4 +910,17 @@ header {
 
 .img1 {
     float: left;
+}
+
+.link {
+    color: white;
+}
+
+.cancel {
+    float: left;
+    width: 35%;
+    margin-right: 15px;
+    text-align: center;
+    padding-left: 15px;
+    background-color: rgb(253, 80, 80);
 }
