@@ -842,13 +842,15 @@ button:hover {
 
 .novobtn {
     width: 35%;
-    margin-right: 15px;
-    margin-top: 2%;
+    float: right;
     text-align: center;
+    margin-right: 20%;
     color: white;
-    padding: 4%;
+    padding: 2%;
     background-color: #10ecec;
     border-radius: 4px;
+    margin-top: 2%;
+    margin-bottom: 10%;
 }
 
 
@@ -877,11 +879,13 @@ button:hover {
 
 .github img {
     padding: 10px;
-    margin-left: 30%;
+    margin-left: 28%;
 }
 
 .github .git {
-    margin-left: 15%;
+    margin-left: 13%;
+    padding: 2%;
+    color: #10ecec;
 }
 
 footer {

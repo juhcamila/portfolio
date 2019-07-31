@@ -13,7 +13,7 @@
             <label for="psw"><b>Senha</b></label>
             <input type="password" placeholder="Entre com sua senha" name="psw" required>
 
-            <button type="submit">Logar</button>
+            <button type="submit">Logar</button><br>
             <%= link "Cancelar", to: Routes.page_path(@conn, :index), class: "cancel" %>
             <%= link "Criar Conta", to: Routes.page_path(@conn, :index), class: "novobtn" %>
         </div>
