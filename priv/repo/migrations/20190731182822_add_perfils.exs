@@ -5,11 +5,13 @@ defmodule Portfolio.Repo.Migrations.AddPerfils do
     create table :perfis do 
       add :user_id, references(:usuarios)
       add :nome, :string
-      add :sexo, :boolean
+      add :sexo, :integer
       add :profissao, :string
       add :pais, :string
       add :cidade, :string
+      add :estado, :string
       add :data_nascimento, :string
+      add :celular, :string
       add :avatar, :string
 
       timestamps()

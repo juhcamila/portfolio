@@ -30,7 +30,8 @@ defmodule PortfolioWeb.Router do
   scope "/perfil", PortfolioWeb do
     pipe_through :browser
 
-    get "/", PerfilController, :index
+    resources("/", PerfilController)
+
   end
 
   # Other scopes may use custom stacks.

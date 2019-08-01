@@ -1,0 +1,79 @@
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+        <!-- The Grid -->
+        <div class="w3-row-padding">
+
+            <!-- Left Column -->
+            <div class="w3-third">
+
+                <div class="w3-white w3-text-grey w3-card-4">
+                   <div class="w3-container" style="text-align: center">
+                        <h2 style="color: #10ecec;">Seja Bem vindo ao OP - WEB</h2>
+                        <h3>Para a continuidade, precisamos de mais algumas informações</h3>
+                    </div>
+
+                     <div class="w3-container">
+                        <h3 style="text-align: center">Razões para o preenchimento dessas informações</h3>
+                        <ul>
+                          <li> Nome: identificação - se você preferir pode usar nomente o apelido</li>
+                          <li> Profissão: Para empresas especificas da sua área te encontrarem </li>
+                          <li> Endereço: Para empresas ou pessoas interessadas de acordo com a sua localização </li>
+                          <li> Celular: Para empresas e/ou pessoas interessadas entrar em contato contigo </li>
+                        </ul>
+                        <h4 style="text-align: center">Lembrando que somente o nome, celular, sexo e data de nascimento são 
+                         campos obrigatórios
+                        </h4>
+                        <p><i class="fa fa-heart fa-fw w3-margin-right w3-large w3-text-red"></i>Espero que gostem, foi feito com amor!</p>
+                    </div>
+                </div><br>
+
+                <!-- End Left Column -->
+            </div>
+
+            <!-- Right Column -->
+    <div class="w3-twothird">
+    
+        <%= form_for @changeset, Routes.perfil_path(@conn, :create), [multipart: true], fn f ->%>
+              <div class="w3-container w3-card w3-white w3-margin-bottom w3-center">
+                <h2 style="color: #10ecec;">Preencha suas informações iniciais</h2>
+                <div class="form-group">
+                    <label>Nome</label>
+                    <%= text_input f, :nome, placeholder: "Digite seu nome", class: "w3-input w3-animate-input" %>
+                    <div><%= error_tag f, :nome %></div>
+                    <label>Profissão</label>
+                    <%= text_input f, :profissao, placeholder: "Digite sua profissao", class: "w3-input w3-animate-input" %>
+                    <div><%= error_tag f, :profissao %></div>
+                    <label>Pais</label>    
+                    <%= text_input f, :pais, placeholder: "Digite seu pais", class: "w3-input w3-animate-input" %>
+                    <div><%= error_tag f, :pais %></div>
+                    <label>Estado</label>            
+                    <%= text_input f, :estado, placeholder: "Digite seu estado", class: "w3-input w3-animate-input" %>
+                    <div><%= error_tag f, :estado %></div>
+                    <label>Cidade</label>   
+                    <%= text_input f, :cidade, placeholder: "Digite sua cidade", class: "w3-input w3-animate-input" %><br>
+                    <div><%= error_tag f, :cidade %></div>  
+                    <label>Celular</label>   
+                    <%= text_input f, :celular, placeholder: "Digite seu celular", class: "w3-input w3-animate-input" %><br>
+                    <div><%= error_tag f, :celular %></div>      
+                    <label>Data de nascimento</label>
+                    <%= date_input f, :data_nascimento, class: "w3-input w3-animate-input" %><br>
+                    <div><%= error_tag f, :data_nascimento %></div>
+                    <label>Sexo</label>
+                    <%= select f, :sexo, [{gettext("Feminino"), "1"},{gettext("Masculino"), "2"},], class: "w3-input", prompt: "Selecione uma opção"%><br>
+                    <div><%= error_tag f, :sexo %></div>        
+                    <label>Foto de perfil</label><br>   
+                    <%= file_input f, :avatar %>
+                    <div><%= error_tag f, :avatar %></div>
+                    <br><br>
+                </div>
+                <%= submit "Criar Perfil", class: "w3-btn w3-teal we-center"%>    
+            <br><br></div>
+        <% end %>
+    <!-- End Right Column -->
+    </div>
+        
+            <!-- End Grid -->
+    </div>
+
+    <!-- End Page Container -->
+</div>

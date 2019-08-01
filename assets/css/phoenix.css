@@ -919,3 +919,16 @@ header {
     background-color: rgb(253, 80, 80);
     border-radius: 4px;
 }
+
+.w3-twothird label {
+    float: left;
+    padding: 1.7%;
+}
+
+.w3-twothird input {
+    float: right;
+}
+
+.w3-btn {
+    margin-left: -20%;
+}
