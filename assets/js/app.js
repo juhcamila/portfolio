@@ -2,7 +2,8 @@
 // The MiniCssExtractPlugin is used to separate it out into
 // its own CSS file.
 import css from "../css/app.css"
-
+import "jquery-mask-plugin";
+import "./mask.js"
 // webpack automatically bundles all modules in your
 // entry points. Those entry points can be configured
 // in "webpack.config.js".
@@ -10,9 +11,6 @@ import css from "../css/app.css"
 // Import dependencies
 //
 import "phoenix_html"
-import "jquery-mask-plugin";
-import "/mask.js"
-
 // Import local files
 //
 // Local files can be imported directly using relative paths, for example:

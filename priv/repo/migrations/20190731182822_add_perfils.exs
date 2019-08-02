@@ -3,7 +3,7 @@ defmodule Portfolio.Repo.Migrations.AddPerfils do
 
   def change do
     create table :perfis do 
-      add :user_id, references(:usuarios)
+      add :usuario_id, references(:usuarios)
       add :nome, :string
       add :sexo, :integer
       add :profissao, :string

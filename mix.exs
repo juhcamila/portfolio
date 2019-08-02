@@ -44,7 +44,14 @@ defmodule Portfolio.MixProject do
       {:jason, "~> 1.0"},
       {:ueberauth_github, "~> 0.7"},
       {:plug_cowboy, "~> 2.0"},
-      {:poison, "~> 3.1"}
+      {:poison, "~> 3.1"},
+      arc: "~> 0.11.0",
+
+      # If using Amazon S3:
+      ex_aws: "~> 2.0",
+      ex_aws_s3: "~> 2.0",
+      hackney: "~> 1.6",
+      sweet_xml: "~> 0.6"
     ]
   end
 

@@ -34,6 +34,10 @@ config :ueberauth, Ueberauth.Strategy.Github.OAuth,
   client_id: "Iv1.4193d44d28f052a9",
   client_secret: "b3a939a115d32fc7b1a7c224b6b7ccd001b8acde"
 
+config :arc,
+  storage: Arc.Storage.S3, # or Arc.Storage.Local
+  bucket: {:system, "AWS_S3_BUCKET"} # if using Amazon S3
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env()}.exs"

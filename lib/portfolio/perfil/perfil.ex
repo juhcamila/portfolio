@@ -13,7 +13,7 @@ defmodule Portfolio.Perfil do
         field :data_nascimento, :string
         field :avatar, :string
         field :celular, :string
-        belongs_to :user_id, Usuario
+        belongs_to :usuario_id, Usuario
 
         timestamps()
     end
