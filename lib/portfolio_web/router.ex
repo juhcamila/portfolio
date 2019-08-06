@@ -26,13 +26,14 @@ defmodule PortfolioWeb.Router do
     get "/", AuthController, :index
     get "/:provider", AuthController, :request
     get "/:provider/callback", AuthController, :callback
+    get "/:provider/logout", AuthController, :logout
   end
 
   scope "/perfil", PortfolioWeb do
     pipe_through :browser
 
-    resources("/", PerfilController)
-
+    get "/home", PerfilController, :show
+    resources("/", PerfilController, except: [:show])
   end
 
   # Other scopes may use custom stacks.
